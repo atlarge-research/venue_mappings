@@ -443,10 +443,11 @@ class VenueMapper(object):
         #     "The Israeli Experimental Systems Conference",
         #     "Annual Haifa Experimental Systems Conference",
         # },
-        # "INFOCOM": {
-        #     "INFOCOM",
-        #     "Conference on Computer Communications",
-        # },
+        "INFOCOM": {
+            (r"INFOCOM", MatchType.EXACT),
+            (r"\{INFOCOM\}(?!.*\bWorkshops?\b).*$", MatchType.REGEX),
+            (r"IEEE INFOCOM(?!.*\bWorkshops?\b).*$", MatchType.REGEX),
+        },
         "CloudCom": {
             (r"^CloudCom( \(\d\))?$", MatchType.REGEX),  # DBLP
             (r"(CloudCom)", MatchType.CONTAINS),
