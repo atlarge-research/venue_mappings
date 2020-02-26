@@ -1,7 +1,7 @@
 from tests.BaseRunner import BaseRunner
 
 
-class TestATC(BaseRunner):
+class TestINFOCOM(BaseRunner):
 
     def setUp(self):
         self.expected_venue = "INFOCOM"
