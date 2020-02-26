@@ -433,10 +433,11 @@ class VenueMapper(object):
         #     "Large Installation System Administration Conference",
         #     "Conference on Systems Administration",
         # },
-        # "FAST": {
-        #     "FAST",
-        #     "Conference on File and Storage Technologies",
-        # },
+        "FAST": {
+            (r"FAST", MatchType.EXACT),
+            (r"{FAST}", MatchType.CONTAINS),
+            (r"$\{$FAST$\}$", MatchType.CONTAINS),
+        },
         # "SYSTOR": {
         #     "SYSTOR",
         #     "International Systems and Storage Conference",
