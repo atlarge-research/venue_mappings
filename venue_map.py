@@ -551,6 +551,10 @@ class VenueMapper(object):
             (r"DSN", MatchType.EXACT),
             (r"International Conference on Dependable Systems and Networks(?!.*\bWorkshops\b).*", MatchType.REGEX),
         },
+        "SASO": {
+            (r"SASO", MatchType.EXACT),
+            (r"International Conference on Self-Adaptive and Self-Organizing Systems", MatchType.CONTAINS),
+        },
     }
 
     def __init__(self):
