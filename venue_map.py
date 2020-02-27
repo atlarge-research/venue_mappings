@@ -547,8 +547,11 @@ class VenueMapper(object):
             (r"Journal of Integrated Design and Process Science", MatchType.EXACT),
             (r"Transactions of the {SDPS}", MatchType.CONTAINS),
             (r"J. Integrated Design {\&} Process Science", MatchType.EXACT),
-        }
-
+        },
+        "DSN": {
+            (r"DSN", MatchType.EXACT),
+            (r"International Conference on Dependable Systems and Networks(?!.*\bWorkshops\b).*", MatchType.REGEX),
+        },
     }
 
     def __init__(self):
