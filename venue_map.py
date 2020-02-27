@@ -438,12 +438,11 @@ class VenueMapper(object):
             (r"{FAST}", MatchType.CONTAINS),
             (r"$\{$FAST$\}$", MatchType.CONTAINS),
         },
-        # "SYSTOR": {
-        #     "SYSTOR",
-        #     "International Systems and Storage Conference",
-        #     "The Israeli Experimental Systems Conference",
-        #     "Annual Haifa Experimental Systems Conference",
-        # },
+        "SYSTOR": {
+            (r"SYSTOR", MatchType.EXACT),
+            (r"The Israeli Experimental Systems Conference", MatchType.CONTAINS),
+            (r"International Conference on Systems and Storage(,|$)", MatchType.REGEX),
+        },
         "INFOCOM": {
             (r"INFOCOM", MatchType.EXACT),
             (r"\{INFOCOM\}(?!.*\bWorkshops?\b).*$", MatchType.REGEX),
