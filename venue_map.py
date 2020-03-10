@@ -56,6 +56,7 @@ class VenueMapper(object):
             (r"ICDCS", MatchType.EXACT),  # used by DBLP
             (r"International Conference on Distributed Computing Systems,", MatchType.CONTAINS),
             (r"International Conference on Distributed Computing Systems {(ICDCS}", MatchType.CONTAINS),
+            (r"International Conference on Distributed Computing Systems (ICDCS)", MatchType.CONTAINS),
             (r"Distributed Computing Systems,", MatchType.STARTS_WITH),
         },
         "OSDI": {
