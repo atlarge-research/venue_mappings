@@ -138,7 +138,10 @@ class VenueMapper(object):
         "CCGrid": {
             (r"CCGrid", MatchType.EXACT),  # used by DBLP
             (r"CCGRID", MatchType.EXACT),  # also used by DBLP
+            (r"(CCGrid)", MatchType.CONTAINS),  # also used by DBLP
+            (r"Cluster Computing and the Grid,", MatchType.STARTS_WITH),  # also used by DBLP
             (r"International Symposium on Cluster, Cloud and Grid Computing,", MatchType.CONTAINS),
+            (r"International Conference on Cluster, Cloud and Grid Computing,", MatchType.CONTAINS),
             (r"International Symposium on Cluster Computing and the Grid", MatchType.CONTAINS),
             (r"International Symposium on Cluster, Cloud and Grid Computing", MatchType.CONTAINS),
         },
