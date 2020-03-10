@@ -396,6 +396,7 @@ class VenueMapper(object):
             (r"{FREENIX} Track:", MatchType.CONTAINS),
             (r"USENIX Annual Technical Conference", MatchType.EXACT),  # used by DBLP
             (r"{USENIX} Annual Technical Conference,", MatchType.CONTAINS),
+            (r"$ATC$", MatchType.CONTAINS),
         },
         "CCPE": {
             (r"CCPE", MatchType.EXACT),  # not in DBPL, but just in case.
