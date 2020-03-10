@@ -271,6 +271,7 @@ class VenueMapper(object):
             (r"HPDC", MatchType.EXACT),
             (r"{HPDC}", MatchType.CONTAINS),
             (r"{(HPDC}", MatchType.CONTAINS),
+            (r"{(HPDC-", MatchType.CONTAINS),
             (r"International Symposium on High Performance Distributed Computing,", MatchType.CONTAINS),
             (r"High-Performance Distributed Computing,", MatchType.STARTS_WITH),  # Notice the carrot.
             (r"International Symposium on High Performance Parallel and Distributed Computing,", MatchType.CONTAINS),
