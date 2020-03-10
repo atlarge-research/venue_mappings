@@ -372,7 +372,9 @@ class VenueMapper(object):
         # },
         "SC": {
             (r"SC", MatchType.EXACT),  # used by DBLP
+            (r"International Conference on Supercomputing", MatchType.EXACT),  # used by DBLP
             (r"{SC2005}", MatchType.CONTAINS),  # Funny mislabeling from the past.
+            (r"{SC}", MatchType.CONTAINS),  # Funny mislabeling from the past.
             (r"Proceedings Supercomputing ", MatchType.STARTS_WITH),
             (r"SC State of the Practice Reports", MatchType.EXACT),  # DBLP
             (r"{ACM/IEEE} Conference on Supercomputing,", MatchType.CONTAINS),
