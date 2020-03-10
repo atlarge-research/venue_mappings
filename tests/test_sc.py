@@ -13,6 +13,8 @@ class TestSC(BaseRunner):
             "Proceedings Supercomputing '88, Orlando, FL, USA, November 12-17, 1988",
             "Proceedings of the {ACM/IEEE} Conference on Supercomputing, {SC} 1999, November 13-19, 1999, Portland, Oregon, {USA}",
             "SC State of the Practice Reports",  # DBLP
+            "International Conference on Supercomputing",
+            "Conference on High Performance Computing Networking, Storage and Analysis, {SC} 2011, Seattle, WA, USA, November 12-18, 2011",
         }
 
         self.wrong_strings = {

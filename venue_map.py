@@ -56,6 +56,7 @@ class VenueMapper(object):
             (r"ICDCS", MatchType.EXACT),  # used by DBLP
             (r"International Conference on Distributed Computing Systems,", MatchType.CONTAINS),
             (r"International Conference on Distributed Computing Systems {(ICDCS}", MatchType.CONTAINS),
+            (r"International Conference on Distributed Computing Systems (ICDCS)", MatchType.CONTAINS),
             (r"Distributed Computing Systems,", MatchType.STARTS_WITH),
         },
         "OSDI": {
@@ -137,7 +138,10 @@ class VenueMapper(object):
         "CCGrid": {
             (r"CCGrid", MatchType.EXACT),  # used by DBLP
             (r"CCGRID", MatchType.EXACT),  # also used by DBLP
+            (r"(CCGrid)", MatchType.CONTAINS),  # also used by DBLP
+            (r"Cluster Computing and the Grid,", MatchType.STARTS_WITH),  # also used by DBLP
             (r"International Symposium on Cluster, Cloud and Grid Computing,", MatchType.CONTAINS),
+            (r"International Conference on Cluster, Cloud and Grid Computing,", MatchType.CONTAINS),
             (r"International Symposium on Cluster Computing and the Grid", MatchType.CONTAINS),
             (r"International Symposium on Cluster, Cloud and Grid Computing", MatchType.CONTAINS),
         },
@@ -270,6 +274,7 @@ class VenueMapper(object):
             (r"HPDC", MatchType.EXACT),
             (r"{HPDC}", MatchType.CONTAINS),
             (r"{(HPDC}", MatchType.CONTAINS),
+            (r"{(HPDC-", MatchType.CONTAINS),
             (r"International Symposium on High Performance Distributed Computing,", MatchType.CONTAINS),
             (r"High-Performance Distributed Computing,", MatchType.STARTS_WITH),  # Notice the carrot.
             (r"International Symposium on High Performance Parallel and Distributed Computing,", MatchType.CONTAINS),
@@ -371,7 +376,9 @@ class VenueMapper(object):
         # },
         "SC": {
             (r"SC", MatchType.EXACT),  # used by DBLP
+            (r"International Conference on Supercomputing", MatchType.EXACT),  # used by DBLP
             (r"{SC2005}", MatchType.CONTAINS),  # Funny mislabeling from the past.
+            (r"{SC}", MatchType.CONTAINS),  # Funny mislabeling from the past.
             (r"Proceedings Supercomputing ", MatchType.STARTS_WITH),
             (r"SC State of the Practice Reports", MatchType.EXACT),  # DBLP
             (r"{ACM/IEEE} Conference on Supercomputing,", MatchType.CONTAINS),
@@ -396,6 +403,7 @@ class VenueMapper(object):
             (r"{FREENIX} Track:", MatchType.CONTAINS),
             (r"USENIX Annual Technical Conference", MatchType.EXACT),  # used by DBLP
             (r"{USENIX} Annual Technical Conference,", MatchType.CONTAINS),
+            (r"$ATC$", MatchType.CONTAINS),
         },
         "CCPE": {
             (r"CCPE", MatchType.EXACT),  # not in DBPL, but just in case.
