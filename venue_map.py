@@ -105,8 +105,7 @@ class VenueMapper(object):
         },
         "TPDS": {
             (r"Trans. Parallel Distrib. Syst.", MatchType.ENDS_WITH),
-            (r"Transactions on Parallel and Distributed Systems", MatchType.CONTAINS),
-            (r"Transactions on parallel and distributed systems", MatchType.CONTAINS),
+            (r"(t|T)ransactions on (p|P)arallel and (d|D)istributed (s|S)ystems", MatchType.REGEX),
         },
         "SERVICES": {
             (r"^SERVICES( (I|II))?$", MatchType.REGEX),
