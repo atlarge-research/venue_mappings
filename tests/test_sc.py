@@ -15,6 +15,7 @@ class TestSC(BaseRunner):
             "SC State of the Practice Reports",  # DBLP
             "International Conference on Supercomputing",
             "Conference on High Performance Computing Networking, Storage and Analysis, {SC} 2011, Seattle, WA, USA, November 12-18, 2011",
+            "Proceedings of the Conference on High Performance Computing Networking, Storage and Analysis",
         }
 
         self.wrong_strings = {

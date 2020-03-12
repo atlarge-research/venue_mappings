@@ -385,6 +385,7 @@ class VenueMapper(object):
             (r"SC State of the Practice Reports", MatchType.EXACT),  # DBLP
             (r"{ACM/IEEE} Conference on Supercomputing,", MatchType.CONTAINS),
             (r"^(?=.*International Conference for High Performance Computing,)(?!.*\bWorkshop\b).*$", MatchType.REGEX),
+            (r"^(?=.*Conference on High Performance Computing Networking, Storage and Analysis)(?!.*\bWorkshop\b).*$", MatchType.REGEX),
         },
         # "HPC": {
         #     r"High-Performance Computing in China:",
