@@ -340,6 +340,7 @@ class VenueMapper(object):
         "FGCS": {
             (r"FGCS", MatchType.EXACT),
             (r"Future Generation Computer Systems", MatchType.EXACT),
+            (r"Future Gener. Comput. Syst.", MatchType.EXACT),
             (r"Future Generation Comp. Syst.", MatchType.CONTAINS),
         },
         "EuroSys": {

@@ -10,6 +10,7 @@ class TestFGCS(BaseRunner):
             "FGCS",  # used by DBLP
             "Future Generation Comp. Syst.",
             "Future Generation Computer Systems",
+            "Future Gener. Comput. Syst.",
         }
 
         self.wrong_strings = {
