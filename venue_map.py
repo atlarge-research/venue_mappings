@@ -184,7 +184,7 @@ class VenueMapper(object):
         "UCC": {
             (r"UCC", MatchType.EXACT),
             (r"(UCC)", MatchType.CONTAINS),
-            (r"^(?=.*\{UCC\})(?!.*\bCompanion\b).*$", MatchType.REGEX),
+            (r"^(?=.*International Conference on Utility and Cloud Computing)(?!.*\bCompanion\b).*$", MatchType.REGEX),
         },
         "ISCID": {
             (r"^ISCID( \(\d\))?$", MatchType.REGEX),

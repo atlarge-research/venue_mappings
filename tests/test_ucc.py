@@ -12,6 +12,7 @@ class TestUCC(BaseRunner):
             "Utility and Cloud Computing (UCC), 2011 Fourth IEEE International Conference on",
             "Proceedings of the 7th {IEEE/ACM} International Conference on Utility and Cloud Computing, {UCC} 2014, London, United Kingdom, December 8-11, 2014",
             "2018 IEEE/ACM 11th International Conference on Utility and Cloud Computing (UCC)",
+            "Proceedings of the 9th International Conference on Utility and Cloud Computing",
         }
 
         self.wrong_strings = {
