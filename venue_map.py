@@ -62,6 +62,7 @@ class VenueMapper(object):
         "OSDI": {
             (r"OSDI", MatchType.EXACT),  # used by DBLP
             (r"Symposium on Operating Systems Design and Implementation", MatchType.CONTAINS),
+            (r"conference on Operating Systems Design and Implementation", MatchType.CONTAINS),
         },
         "ICFEC": {
             (r"ICFEC", MatchType.EXACT),
