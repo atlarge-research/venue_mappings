@@ -485,8 +485,7 @@ class VenueMapper(object):
         "e-Science": {
             (r"e-Science", MatchType.EXACT),  # used by DBLP
             (r"e-Science and Grid Computing,", MatchType.STARTS_WITH),
-            (r"International Conference on e-Science, (?!eScience Workshops)", MatchType.REGEX),
-            (r"International Conference on e-Science and Grid Technologies", MatchType.CONTAINS),
+            (r"^(?!.*Workshops).*International Conference on e-Science.*$", MatchType.REGEX),
         },
         # "CIS": {
         #     "Computational Intelligence and Security"
