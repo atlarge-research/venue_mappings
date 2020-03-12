@@ -11,6 +11,7 @@ class TestOSDI(BaseRunner):
             "Proceedings of the First {USENIX} Symposium on Operating Systems Design and Implementation (OSDI), Monterey, California, USA, November 14-17, 1994",
             "9th {USENIX} Symposium on Operating Systems Design and Implementation, {OSDI} 2010, October 4-6, 2010, Vancouver, BC, Canada, Proceedings",
             "13th $\{$USENIX$\}$ Symposium on Operating Systems Design and Implementation ($\{$OSDI$\}$ 18)",
+            "Proceedings of the 1st USENIX conference on Operating Systems Design and Implementation",
         }
 
         self.wrong_strings = {

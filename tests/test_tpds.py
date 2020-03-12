@@ -10,6 +10,7 @@ class TestTPDS(BaseRunner):
             "IEEE Trans. Parallel Distrib. Syst.",  # used by DBLP
             "{IEEE} Trans. Parallel Distrib. Syst.",
             "IEEE Transactions on parallel and distributed systems",  # Google Scholar
+            "IEEE transactions on parallel and distributed systems",
         }
 
         self.wrong_strings = {

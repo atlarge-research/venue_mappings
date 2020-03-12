@@ -11,6 +11,7 @@ class TestEuroSys(BaseRunner):
             "Proceedings of the 2006 EuroSys Conference, Leuven, Belgium, April 18-21, 2006",
             "ACM SIGOPS Operating Systems Review",
             "European Conference on Computer Systems, Proceedings of the 5th European conference on Computer systems, EuroSys 2010, Paris, France, April 13-16, 2010",
+            "Proceedings of the Tenth European Conference on Computer Systems",
         }
 
         self.wrong_strings = {

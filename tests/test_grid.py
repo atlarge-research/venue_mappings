@@ -12,6 +12,7 @@ class TestGRID(BaseRunner):
             "International Workshop on Grid Computing",
             "Proceedings of the 2010 11th {IEEE/ACM} International Conference on Grid Computing, Brussels, Belgium, October 25-29, 2010",
             "Grid Computing (GRID), 2010 11th IEEE/ACM International Conference on",
+            "Proceedings of the 7th IEEE/ACM International Conference on Grid Computing",
         }
 
         self.wrong_strings = {

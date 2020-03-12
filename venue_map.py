@@ -62,6 +62,7 @@ class VenueMapper(object):
         "OSDI": {
             (r"OSDI", MatchType.EXACT),  # used by DBLP
             (r"Symposium on Operating Systems Design and Implementation", MatchType.CONTAINS),
+            (r"conference on Operating Systems Design and Implementation", MatchType.CONTAINS),
         },
         "ICFEC": {
             (r"ICFEC", MatchType.EXACT),
@@ -104,8 +105,7 @@ class VenueMapper(object):
         },
         "TPDS": {
             (r"Trans. Parallel Distrib. Syst.", MatchType.ENDS_WITH),
-            (r"Transactions on Parallel and Distributed Systems", MatchType.CONTAINS),
-            (r"Transactions on parallel and distributed systems", MatchType.CONTAINS),
+            (r"(t|T)ransactions on (p|P)arallel and (d|D)istributed (s|S)ystems", MatchType.REGEX),
         },
         "SERVICES": {
             (r"^SERVICES( (I|II))?$", MatchType.REGEX),
@@ -184,7 +184,7 @@ class VenueMapper(object):
         "UCC": {
             (r"UCC", MatchType.EXACT),
             (r"(UCC)", MatchType.CONTAINS),
-            (r"^(?=.*\{UCC\})(?!.*\bCompanion\b).*$", MatchType.REGEX),
+            (r"^(?=.*International Conference on Utility and Cloud Computing)(?!.*\bCompanion\b).*$", MatchType.REGEX),
         },
         "ISCID": {
             (r"^ISCID( \(\d\))?$", MatchType.REGEX),
@@ -297,7 +297,7 @@ class VenueMapper(object):
             (r"{GRID}", MatchType.CONTAINS),
             (r"(GRID)", MatchType.CONTAINS),
             (r"International Workshop on Grid Computing", MatchType.EXACT),
-            (r"International Conference on Grid Computing,", MatchType.CONTAINS),
+            (r"International Conference on Grid Computing", MatchType.CONTAINS),
         },
         # "BroadNets": {
         #     "BroadNets",
@@ -340,12 +340,13 @@ class VenueMapper(object):
         "FGCS": {
             (r"FGCS", MatchType.EXACT),
             (r"Future Generation Computer Systems", MatchType.EXACT),
+            (r"Future Gener. Comput. Syst.", MatchType.EXACT),
             (r"Future Generation Comp. Syst.", MatchType.CONTAINS),
         },
         "EuroSys": {
             (r"EuroSys", MatchType.EXACT),  # DBLP
             (r"ACM SIGOPS Operating Systems Review", MatchType.EXACT),
-            (r"European conference on Computer systems,", MatchType.CONTAINS),
+            (r"European (c|C)onference on Computer (S|s)ystems", MatchType.REGEX),
             (r"EuroSys Conference,", MatchType.CONTAINS),
         },
         "ISPDC": {
@@ -383,6 +384,7 @@ class VenueMapper(object):
             (r"SC State of the Practice Reports", MatchType.EXACT),  # DBLP
             (r"{ACM/IEEE} Conference on Supercomputing,", MatchType.CONTAINS),
             (r"^(?=.*International Conference for High Performance Computing,)(?!.*\bWorkshop\b).*$", MatchType.REGEX),
+            (r"^(?=.*Conference on High Performance Computing Networking, Storage and Analysis)(?!.*\bWorkshop\b).*$", MatchType.REGEX),
         },
         # "HPC": {
         #     r"High-Performance Computing in China:",
@@ -485,8 +487,7 @@ class VenueMapper(object):
         "e-Science": {
             (r"e-Science", MatchType.EXACT),  # used by DBLP
             (r"e-Science and Grid Computing,", MatchType.STARTS_WITH),
-            (r"International Conference on e-Science, (?!eScience Workshops)", MatchType.REGEX),
-            (r"International Conference on e-Science and Grid Technologies", MatchType.CONTAINS),
+            (r"^(?!.*Workshops).*International Conference on e-Science.*$", MatchType.REGEX),
         },
         # "CIS": {
         #     "Computational Intelligence and Security"
