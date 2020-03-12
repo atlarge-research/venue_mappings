@@ -297,7 +297,7 @@ class VenueMapper(object):
             (r"{GRID}", MatchType.CONTAINS),
             (r"(GRID)", MatchType.CONTAINS),
             (r"International Workshop on Grid Computing", MatchType.EXACT),
-            (r"International Conference on Grid Computing,", MatchType.CONTAINS),
+            (r"International Conference on Grid Computing", MatchType.CONTAINS),
         },
         # "BroadNets": {
         #     "BroadNets",
