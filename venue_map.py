@@ -346,7 +346,7 @@ class VenueMapper(object):
         "EuroSys": {
             (r"EuroSys", MatchType.EXACT),  # DBLP
             (r"ACM SIGOPS Operating Systems Review", MatchType.EXACT),
-            (r"European conference on Computer systems,", MatchType.CONTAINS),
+            (r"European (c|C)onference on Computer (S|s)ystems", MatchType.REGEX),
             (r"EuroSys Conference,", MatchType.CONTAINS),
         },
         "ISPDC": {
