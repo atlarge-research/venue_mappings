@@ -384,7 +384,8 @@ class VenueMapper(object):
             (r"SC State of the Practice Reports", MatchType.EXACT),  # DBLP
             (r"{ACM/IEEE} Conference on Supercomputing,", MatchType.CONTAINS),
             (r"^(?=.*International Conference for High Performance Computing,)(?!.*\bWorkshop\b).*$", MatchType.REGEX),
-            (r"^(?=.*Conference on High Performance Computing Networking, Storage and Analysis)(?!.*\bWorkshop\b).*$", MatchType.REGEX),
+            (r"^(?=.*Conference on High Performance Computing Networking, Storage and Analysis)(?!.*\bWorkshop\b).*$",
+             MatchType.REGEX),
         },
         # "HPC": {
         #     r"High-Performance Computing in China:",
@@ -563,6 +564,15 @@ class VenueMapper(object):
         "SASO": {
             (r"SASO", MatchType.EXACT),
             (r"International Conference on Self-Adaptive and Self-Organizing Systems", MatchType.CONTAINS),
+        },
+        "IMC": {
+            (r"IMC", MatchType.EXACT),
+            (r"Internet Measurement Workshop", MatchType.EXACT),
+            (r"Internet Measurement Conference", MatchType.EXACT),
+            (r"{IMW}", MatchType.CONTAINS),
+            (r"{IMC}", MatchType.CONTAINS),
+            (r"on Internet measurment", MatchType.ENDS_WITH),  # The typo is correct - this is in Google Scholar
+            (r"on Internet (M|m)easurement$", MatchType.REGEX),
         },
     }
 
