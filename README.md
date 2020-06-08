@@ -2,7 +2,7 @@
 Venue mappings is a library project developed by [Laurens Versluis](https://github.com/lfdversluis/) to map venue BibTex strings found in sources such as [DBLP](dblp.uni-trier.de/) and [Google Scholar](scholar.google.com/) to the acronym of the venue.
 
 For example the strings `FGCS`, `Future Generation Comp. Syst.` and `Future Generation Computer Systems` can be found in BibTex entries and other corpuses. The venue mapper maps these strings to their corresponding acronym -  `FGCS`.
-Article meta-data stored in, e.g., a datbase then becomes easier to query, as well as sanitizing and making uniform your BibTex entries.  
+Article meta-data stored in, e.g., a database then becomes easier to query, as well as sanitizing and making uniform your BibTex entries.  
 
 ## Usage
 ```
