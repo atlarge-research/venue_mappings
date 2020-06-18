@@ -2,7 +2,7 @@ import orjson
 import ast
 import datetime
 import time
-from venue_map import VenueMapper
+from venue_mapper.venue_mapper import VenueMapper
 
 
 class PerformanceTest(object):

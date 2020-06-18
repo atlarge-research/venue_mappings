@@ -1,6 +1,6 @@
 import unittest
 
-from venue_map import VenueMapper
+from venue_mapper.venue_mapper import VenueMapper
 
 
 class BaseRunner(unittest.TestCase):
