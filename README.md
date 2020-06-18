@@ -8,12 +8,10 @@ Article meta-data stored in, e.g., a database then becomes easier to query, as w
 
 ## Usage
 ```
-from venue_map import VenueMapper
+from venue_mapper.venue_mapper import VenueMapper
 venue_mapper = VenueMapper()
 acronym = venue_mapper.get_abbreviation("FGCS")
 ```
-
-TODO: Upload this project to create a pip library package.
 
 ## Scope
 Currently, this repository contains venues from the systems community.
@@ -31,6 +29,3 @@ We use the `BaseRunner` class to make each test as simple as possible. We believ
 ## What's up with these five matching types?
 Initially, this project used regex rules for all matches, including exact matches.
 After some micro benchmarks, we found that moving to this type of matching, and caching already seen strings led to a 6-8x speedup depending on the computer.
-
-## Projects using this library
-TODO.
