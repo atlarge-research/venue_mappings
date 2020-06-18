@@ -18,7 +18,7 @@ Currently, this repository contains venues from the systems community.
 Naturally, we encourage additions through pull-requests.
 
 ## Project Structure
-The file `venue_map.py` contains the `VenueMapper` class.
+The file `venue_mapper.py` contains the `VenueMapper` class.
 This class contains the `venues` dictionary which contains the matching rules.
 
 There are currently five matching types: `EXACT`, `STARTS_WITH`, `ENDS_WITH`, `CONTAINS`, `REGEX`
