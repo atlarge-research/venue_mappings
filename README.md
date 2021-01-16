@@ -17,6 +17,14 @@ acronym = venue_mapper.get_abbreviation("FGCS")
 Currently, this repository contains venues from the systems community.
 Naturally, we encourage additions through pull-requests.
 
+## Version structure
+Currently, the version is in the form of `x.y.z`.
+- If any update is not backwards compatible and users need to modify code to make the upgrade work, `x` will be upped. `y` and `z` will be reset, e.g., `1.2.3` -> `2.0.0`
+- If one or more new venues are added, `y` will be upped. `x` will not change and `z` will be reset, e.g., `1.2.3` -> `1.3.0`.
+- If an update only applies fixes because some BibTex strings were missed, `z` will be upped. `x` and `y` will not change, e.g., `1.2.3` -> `1.2.4`.
+
+Please note that any of `x`, `y`, and `z` can go beyond 9, i.e., `1.10.1610` is a perfectly fine version.
+
 ## Project Structure
 The file `venue_mapper.py` contains the `VenueMapper` class.
 This class contains the `venues` dictionary which contains the matching rules.
